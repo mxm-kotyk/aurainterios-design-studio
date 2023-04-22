@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Quicksand:wght@400;500&display=swap"
+    rel="stylesheet">
+  <title>Aurainteriors Interior Design</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="logo-link link" href="index.html">
+          <svg class="logo-icon" width="150" height="14.36">
+            <use href="./img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a class="nav-list-link" href="#about">About</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="#services">Services</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="#projects">Projects</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-btn-icon" width="40" height="40">
+            <use href="./img/sprite.svg#icon-burger"></use>
+            <use href="./img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section hero">
+      <div class="container">
+        <picture>
+          <source srcset="./img/hero-desktop-1x.jpg 1x, ./img/hero-desktop-2x.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="./img/hero-mobile-1x.jpg 1x, ./img/hero-mobile-2x.jpg 2x" media="(max-width: 767px)">
+          <img class="hero-img img" src="./img/hero-desktop-1x.jpg" alt="" width="735">
+        </picture>
+        <h1 class="hero-title">Transforming Houses into Dream Homes</h1>
+        <p class="hero-text">Enjoy the beauty and comfort of personalized interior design that reflects your unique
+          style and taste.</p>
+        <button class="hero-btn main-btn" type="button">Get started</button>
+      </div>
+    </section>
+    <section class="section about" id="about">
+      <div class="container"></div>
+    </section>
+    <section class="section services" id="services">
+      <div class="container"></div>
+    </section>
+    <section class="section projects" id="projects">
+      <div class="container"></div>
+    </section>
+    <section class="section reviews">
+      <div class="container"></div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="container"></div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+  <div class="project-modal"></div>
+  <div class="pop-up-modal"></div>
+
+</body>
+
+</html>
