@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Quicksand:wght@400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <title>Aurainteriors Interior Design</title>
 </head>
 
@@ -21,17 +23,20 @@
             <use href="./img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-        <ul class="nav-list">
+        <ul class="nav-list list">
           <li class="nav-list-item"><a class="nav-list-link" href="#about">About</a></li>
           <li class="nav-list-item"><a class="nav-list-link" href="#services">Services</a></li>
           <li class="nav-list-item"><a class="nav-list-link" href="#projects">Projects</a></li>
           <li class="nav-list-item"><a class="nav-list-link" href="#contact">Contact</a></li>
         </ul>
-        <button class="mobile-menu-btn" type="button">
-          <svg class="mobile-menu-btn-icon" width="40" height="40">
+        <button class="mobile-menu-btn close" type="button">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+          <!-- <svg class="mobile-menu-btn-icon" width="40" height="40">
             <use href="./img/sprite.svg#icon-burger"></use>
             <use href="./img/sprite.svg#icon-close"></use>
-          </svg>
+          </svg> -->
         </button>
       </nav>
     </div>
@@ -51,24 +56,320 @@
       </div>
     </section>
     <section class="section about" id="about">
-      <div class="container"></div>
+      <div class="container">
+        <picture>
+          <source srcset="./img/about-us-1-desktop-1x.jpg 1x, ./img/about-us-1-desktop-2x.jpg 2x"
+            media="(min-width: 1200px)">
+          <source srcset="./img/about-us-1-mobile-1x.jpg 1x, ./img/about-us-1-mobile-2x.jpg 2x"
+            media="(max-width: 767px)">
+          <img class="about-us-img img" src="./img/about-us-1-desktop-1x.jpg" alt="" width="735">
+        </picture>
+        <h2 class="section-title">About us</h2>
+        <p class="about-us-text">At Aurainteriors, interior design isn’t just a job - it’s our passion. Our team of
+          designers is dedicated to creating
+          beautiful, functional and comfortable spaces that reflect your personality and taste.</p>
+        <p class="about-us-text">We approach each project with enthusiasm and creativity. We work tirelessly to ensure
+          that every detail is perfect. Let
+          us show you how we can transform your house into a dream home that you’ll love.</p>
+        <button class="about-us-btn secondary-btn" type="button">Learn more</button>
+        <ul class="about-us-list list">
+          <li class="about-us-list-item"><span class="about-us-stat-num">12+</span><span class="about-us-stat">Years of
+              experience</span>
+          </li>
+          <li class="about-us-list-item"><span class="about-us-stat-num">400+</span><span class="about-us-stat">Projects
+              completed</span>
+          </li>
+          <li class="about-us-list-item"><span class="about-us-stat-num">1,5K+</span><span
+              class="about-us-stat">Satisfied clients</span>
+          </li>
+          <li class="about-us-list-item"><span class="about-us-stat-num">10</span><span class="about-us-stat">Industry
+              certification</span>
+          </li>
+        </ul>
+        <picture>
+          <source srcset="./img/about-us-2-desktop-1x.jpg 1x, ./img/about-us-2-desktop-2x.jpg 2x"
+            media="(min-width: 1200px)">
+          <source srcset="./img/about-us-2-mobile-1x.jpg 1x, ./img/about-us-2-mobile-2x.jpg 2x"
+            media="(max-width: 767px)">
+          <img class="about-us-img img" src="./img/about-us-2-desktop-1x.jpg" alt="" width="735">
+        </picture>
+      </div>
     </section>
     <section class="section services" id="services">
-      <div class="container"></div>
+      <div class="container">
+        <h2 class="section-title">Our services</h2>
+        <ul class="services-list list">
+          <li class="services-list-item">
+            <h3 class="services-list-item-title">Interior design</h3>
+            <p class="services-list-item-text">We offer comprehensive interior design services, including space
+              planning, color consultation, furniture
+              selection, and
+              more, to create functional and beautiful spaces that reflect your unique style.</p>
+            <button class="services-list-item-btn secondary-btn">Learn more</button>
+          </li>
+          <li class="services-list-item">
+            <h3 class="services-list-item-title">Remodelling and Renovation</h3>
+            <p class="services-list-item-text">Our team specializes in home remodelling and renovation, working closely
+              with clients to transform their
+              homes into
+              modern, efficient, and stylish spaces.</p>
+            <button class="services-list-item-btn secondary-btn">Learn more</button>
+          </li>
+          <li class="services-list-item">
+            <h3 class="services-list-item-title">Styling and Staging</h3>
+            <p class="services-list-item-text">Whether you're looking to sell your home or simply want to refresh your
+              living space, our styling and staging services
+              can help create a cohesive and inviting atmosphere that will impress potential buyers or guests.</p>
+            <button class="services-list-item-btn secondary-btn">Learn more</button>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="section projects" id="projects">
-      <div class="container"></div>
+      <div class="container">
+        <h2 class="section-title">Recent projects</h2>
+        <ul class="projects-list list">
+          <li class="projects-list-item">
+            <picture>
+              <source srcset="./img/projects-1-desktop-1x.jpg 1x, ./img/projects-1-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/projects-1-mobile-1x.jpg 1x, ./img/projects-1-mobile-2x.jpg 2x"
+                media="(max-width: 767px)">
+              <img class="projects-list-item-img img" src="./img/projects-1-desktop-1x.jpg" alt="" width="735">
+            </picture>
+            <h3 class="projects-list-item-title">Scandinavian Serenity</h3>
+            <p class="projects-list-item-text">A minimalist apartment with a neutral color palette, clean lines, and
+              simple yet elegant furnishings that create a
+              serene and calming atmosphere inspired by Scandinavian design.</p>
+            <button class="projects-list-item-btn secondary-btn">View project</button>
+          </li>
+          <li class="projects-list-item">
+            <picture>
+              <source srcset="./img/projects-2-desktop-1x.jpg 1x, ./img/projects-2-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/projects-2-mobile-1x.jpg 1x, ./img/projects-2-mobile-2x.jpg 2x"
+                media="(max-width: 767px)">
+              <img class="projects-list-item-img img" src="./img/projects-2-desktop-1x.jpg" alt="" width="735">
+            </picture>
+            <h3 class="projects-list-item-title">Industrial Elegance</h3>
+            <p class="projects-list-item-text">A spacious loft apartment with exposed brick, raw materials, and stylish
+              furniture that combine to create an industrial
+              aesthetic with a touch of elegance.</p>
+            <button class="projects-list-item-btn secondary-btn">View project</button>
+          </li>
+          <li class="projects-list-item">
+            <picture>
+              <source srcset="./img/projects-3-desktop-1x.jpg 1x, ./img/projects-3-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/projects-3-mobile-1x.jpg 1x, ./img/projects-3-mobile-2x.jpg 2x"
+                media="(max-width: 767px)">
+              <img class="projects-list-item-img img" src="./img/projects-3-desktop-1x.jpg" alt="" width="735">
+            </picture>
+            <h3 class="projects-list-item-title">Bohemian Chic</h3>
+            <p class="projects-list-item-text">A bohemian-inspired apartment with eclectic décor, rich textures, and
+              vibrant colors that create a unique and inviting
+              space full of personality.</p>
+            <button class="projects-list-item-btn secondary-btn">View project</button>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="section reviews">
-      <div class="container"></div>
+      <div class="container">
+        <h2 class="section-title visually-hidden">Reviews</h2>
+        <p class="reviews-text">«Aurainterior team not only are incredibly creative, but are so easy to work with. Great
+          communication, very clear in
+          what they want and it is beyond a pleasure to work with them. <span class="reviews-text-portion">THEIR WORK IS
+            IMPECCABLE.»</span></p>
+        <p class="reviews-text">— CLIENT, TIBURON, CA</p>
+      </div>
     </section>
     <section class="section contact" id="contact">
-      <div class="container"></div>
+      <div class="container">
+        <picture>
+          <source srcset="./img/contacts-desktop-1x.jpg 1x, ./img/contacts-desktop-2x.jpg 2x"
+            media="(min-width: 1200px)">
+          <source srcset="./img/contacts-mobile-1x.jpg 1x, ./img/contacts-mobile-2x.jpg 2x" media="(max-width: 767px)">
+          <img class="contact-img img" src="./img/contacts-desktop-1x.jpg" alt="" width="735">
+        </picture>
+        <h2 class="section-title">Contact us</h2>
+        <p class="contact-text">We love hearing from you and are happy to answer any questions you may have. Simply
+          fill out the form and we’ll get back
+          to you within two business days.</p>
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <input class="contact-input" type="text" name="name" id="name" placeholder=".">
+            <label class="contact-input-label" for="name">Name</label>
+            <input class="contact-input" type="tel" name="phone-number" id="phone-number" placeholder=".">
+            <label class="contact-input-label" for="phone-number">Phone number</label>
+            <input class="contact-input" type="email" name="email" id="email" placeholder=".">
+            <label class="contact-input-label" for="email">Email</label>
+            <input class="contact-input" type="text" name="message" id="message" placeholder=".">
+            <label class="contact-input-label" for="message">Message</label>
+            <button class="contact-btn primary-btn" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="footer"></footer>
-  <div class="project-modal"></div>
-  <div class="pop-up-modal"></div>
+  <footer class="footer">
+    <ul class="socials-list list">
+      <li class="socials-list-item">
+        <a class="socials-link link" href="https://www.instagram.com/" target="_blank"
+          rel="nofollow noreferrer noopener">
+          <svg class="socials-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list-item">
+        <a class="socials-link link" href="https://www.facebook.com/" target="_blank"
+          rel="nofollow noreferrer noopener">
+          <svg class="socials-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list-item">
+        <a class="socials-link link" href="https://www.behance.net/" target="_blank" rel="nofollow noreferrer noopener">
+          <svg class="socials-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-behance"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list-item">
+        <a class="socials-link link" href="https://www.linkedin.com/" target="_blank"
+          rel="nofollow noreferrer noopener">
+          <svg class="socials-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-list-item">
+        <a class="socials-link link" href="https://www.pinterest.com/" target="_blank"
+          rel="nofollow noreferrer noopener">
+          <svg class="socials-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-pinterest"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="contacts-list list">
+      <li class="contacts-list-item">
+        <a class="contacts-link link" href="https://goo.gl/maps/1HcjAfF2QiPsyK4w9" target="_blank"
+          rel="nofollow noreferrer noopener">
+          <svg class="contacts-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-map-tack"></use>
+          </svg>
+          2584 Confederate Drive, Clay, NY, 13088
+        </a>
+      </li>
+      <li class="contacts-list-item">
+        <a class="contacts-link link" href="tel:3157150533">
+          <svg class="contacts-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-phone"></use>
+          </svg>
+          315-715-0533
+        </a>
+      </li>
+      <li class="contacts-list-item">
+        <a class="contacts-link link" href="mailto:hello@aurainteriors.com">
+          <svg class="contacts-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-mail"></use>
+          </svg>
+          hello@aurainteriors.com
+        </a>
+      </li>
+    </ul>
+    <span class="footer-text">© 2023 Aurainteriors. All rights reserved.</span>
+  </footer>
+  <div class="project-modal-backdrop">
+    <div class="project-modal">
+      <button class="project-modal-close-btn" type="button">
+        <svg class="project-modal-close-icon" width="32" height="32">
+          <use href="./img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="project-modal-title">Scandinavian serenity</h2>
+      <ul class="project-modal-list list">
+        <li class="project-modal-list-item">
+          <picture>
+            <source srcset="./img/modal-1-desktop-1x.jpg 1x, ./img/modal-1-desktop-2x.jpg 2x"
+              media="(min-width: 1200px)">
+            <!-- <source srcset="./img/modal-1-mobile-1x.jpg 1x, ./img/modal-1-mobile-2x.jpg 2x" media="(max-width: 767px)"> -->
+            <img class="projects-modal-img img" src="./img/modal-1-desktop-1x.jpg" alt="" width="1110">
+          </picture>
+        </li>
+        <li class="project-modal-list-item">
+          <picture>
+            <source srcset="./img/modal-2-desktop-1x.jpg 1x, ./img/modal-2-desktop-2x.jpg 2x"
+              media="(min-width: 1200px)">
+            <!-- <source srcset="./img/modal-2-mobile-1x.jpg 1x, ./img/modal-2-mobile-2x.jpg 2x" media="(max-width: 767px)"> -->
+            <img class="projects-modal-img img" src="./img/modal-2-desktop-1x.jpg" alt="" width="1110">
+          </picture>
+        </li>
+        <li class="project-modal-list-item">
+          <picture>
+            <source srcset="./img/modal-3-desktop-1x.jpg 1x, ./img/modal-3-desktop-2x.jpg 2x"
+              media="(min-width: 1200px)">
+            <!-- <source srcset="./img/modal-3-mobile-1x.jpg 1x, ./img/modal-3-mobile-2x.jpg 2x" media="(max-width: 767px)"> -->
+            <img class="projects-modal-img img" src="./img/modal-3-desktop-1x.jpg" alt="" width="1110">
+          </picture>
+        </li>
+        <li class="project-modal-list-item">
+          <picture>
+            <source srcset="./img/modal-4-desktop-1x.jpg 1x, ./img/modal-4-desktop-2x.jpg 2x"
+              media="(min-width: 1200px)">
+            <!-- <source srcset="./img/modal-4-mobile-1x.jpg 1x, ./img/modal-4-mobile-2x.jpg 2x" media="(max-width: 767px)"> -->
+            <img class="projects-modal-img img" src="./img/modal-4-desktop-1x.jpg" alt="" width="1110">
+          </picture>
+        </li>
+        <li class="project-modal-list-item">
+          <picture>
+            <source srcset="./img/modal-5-desktop-1x.jpg 1x, ./img/modal-5-desktop-2x.jpg 2x"
+              media="(min-width: 1200px)">
+            <!-- <source srcset="./img/modal-5-mobile-1x.jpg 1x, ./img/modal-5-mobile-2x.jpg 2x" media="(max-width: 767px)"> -->
+            <img class="projects-modal-img img" src="./img/modal-5-desktop-1x.jpg" alt="" width="735">
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="pop-up-modal-backdrop">
+    <div class="pop-up-modal">
+      <button class="pop-up-modal-close-btn" type="button">
+        <svg class="pop-up-modal-close-icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="pop-up-modal-slider">
+        <picture>
+          <source srcset="./img/pop-up-1-1x.jpg 1x, ./img/pop-up-1-2x.jpg 2x" media="(min-width: 1200px)">
+          <img class="projects-modal-img img" src="./img/pop-up-1-1x.jpg" alt="" width="401">
+        </picture>
+        <picture>
+          <source srcset="./img/pop-up-2-1x.jpg 1x, ./img/pop-up-2-2x.jpg 2x" media="(min-width: 1200px)">
+          <img class="projects-modal-img img" src="./img/pop-up-2-1x.jpg" alt="" width="401">
+        </picture>
+        <picture>
+          <source srcset="./img/pop-up-3-1x.jpg 1x, ./img/pop-up-3-2x.jpg 2x" media="(min-width: 1200px)">
+          <img class="projects-modal-img img" src="./img/pop-up-3-1x.jpg" alt="" width="401">
+        </picture>
+      </div>
+      <div class="pop-up-modal-info">
+        <h2 class="pop-up-modal-title">THE AURAINTERIOS REPORT</h2>
+        <p class="pop-up-modal-text">Be the firs to receive news, updates and ongoing visual inspiration from
+          AURAINTERIORS</p>
+        <div class="pop-up-modal-form-wrapper">
+          <form class="pop-up-modal-form">
+            <input class="pop-up-modal-input" type="email" name="email" id="pop-up-modal-email" placeholder=".">
+            <label class="pop-up-modal-input-label" for="pop-up-modal-email">Email Address</label>
+            <button class="pop-up-modal-btn primary-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
