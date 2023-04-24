@@ -1,0 +1,45 @@
+@import "./utilities/variables";
+@import "./utilities/visualli-hidden";
+@import "./base/common";
+@import "./base/reset";
+@import "./base/section";
+@import "./base/container";
+
+.mobile-menu-btn {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	border: 0px solid transparent;
+	background-color: transparent;
+}
+
+.mobile-menu-btn.close .line-1,
+.mobile-menu-btn.close .line-2,
+.mobile-menu-btn.close .line-3 {
+	position: absolute;
+}
+
+.mobile-menu-btn.close .line-1 {
+	transform: rotate(45deg);
+}
+
+.mobile-menu-btn.close .line-2 {
+	opacity: 0;
+}
+
+.mobile-menu-btn.close .line-3 {
+	transform: rotate(-45deg);
+}
+
+.hamburger-line {
+	width: 26.67px;
+	height: 2px;
+	background-color: #3a3a3a;
+	border-radius: 1px;
+}
